@@ -35,8 +35,9 @@ form.my-login-form > h4 {
   text-align: center;
 }
 
-.right-side {
+.right-side p {
   flex: 0.3;
   border-left: 1px solid #ebe8e8;
   height: 93vh;
+  padding: 10px;
 }

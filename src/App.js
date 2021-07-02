@@ -48,7 +48,7 @@ function App() {
 
           <Route exact path="/">
             {/* Rahul */}
-            <Header events />
+            <Header />
             <div className="home-page">
               <HomeDescription />
               <Home />
