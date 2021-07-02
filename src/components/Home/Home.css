@@ -1,0 +1,42 @@
+form.my-login-form {
+  width: 320px;
+  height: 320px;
+  margin: 30px auto;
+}
+
+form.my-login-form > h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.my-login-button {
+  cursor: pointer;
+  width: 80px !important;
+  margin: 0 auto;
+  border-radius: 50px !important;
+  padding: 0 !important;
+  padding-bottom: 5px !important;
+  margin-top: 20px;
+}
+
+.left-side {
+  flex: 0.7;
+  height: 93vh;
+}
+
+.left-side > h3 {
+  text-align: center;
+  margin-top: 210px;
+}
+
+.left-side > p {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-side {
+  flex: 0.3;
+  border-left: 1px solid #ebe8e8;
+  height: 93vh;
+}

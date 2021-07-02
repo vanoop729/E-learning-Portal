@@ -1,0 +1,106 @@
+.navbar {
+  background-color: #6200ee;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-height: 35px !important;
+}
+
+.brand > p {
+  margin: 2px 0 0 5px !important;
+}
+
+.my-form-container {
+  width: 70%;
+}
+
+.my-search {
+  border-radius: 50px 0 0 50px !important;
+  background-color: white !important;
+  border: none !important;
+  width: 90% !important;
+}
+
+.my-search-icon {
+  background-color: #fff;
+  height: 38px !important;
+  border-radius: 0 50px 50px 0;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.search-options {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+.search-options > p {
+  margin: 1px 0 0 5px !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.my-filter {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.user-options {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+}
+
+.events {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.events:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.leaderboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.leaderboard:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.user:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.user > p,
+.leaderboard > p,
+.events > p {
+  margin: 0 0 0 5px !important;
+}
