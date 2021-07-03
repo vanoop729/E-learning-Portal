@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+.Titles{
+    margin-top: 80px;
+    flex: 20% !important;
+    height: 93vh;
+    border-style: groove;
+}
+
+.Titles > h3{
+    text-align: center;
+
+}
+
+.Topics {
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+.Content {
+    margin-top: 105px;
+    margin-left: 20px;
+    flex: 80%;
+    height: 93vh;
+    border-style: groove;
+  }
+
+li > a {
+    color: unset;
+}
+
+li > a:hover {
+    color:red; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.Content > h3 {
+    text-align: center;
+    margin-top: 210px;
+  }
+  
+.Content > p {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
