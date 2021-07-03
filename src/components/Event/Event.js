@@ -1,30 +1,79 @@
 import React from "react";
 import "./Event.css";
-import { useState } from "react";
 
 function Event() {
-  const [name, setName] = useState("Hackathon");
-  const [about, setAbout] = useState(
-    "We aim to serve students in their professional pursuit of research and industry interests.Students take up challenges to solve problems in areas related to Water, Food, Health and Energy through scientific innovation and technological research. We conduct events and hackathons which nurtures the capabilities of students in our community. Hackathon and events conducted by our community enriches  their passion towards digital learning"
-  );
-
   return (
-    <div className="Card">
-      <div className="upper-Container">
-        <div className="image-container">
-          {(setName, setAbout)}
-          <img
-            src="https://pbs.twimg.com/profile_images/1112203752553889792/5_FetTj4.png"
-            alt=""
-            height="100px"
-            width="100px"
-          />
+    <div className="event-page">
+      <h2>Upcoming Events</h2>
+      <div className="event-cards">
+        <div className="card">
+          <div className="upper-Container">
+            <div className="image-container">
+              <img
+                src="https://pbs.twimg.com/profile_images/1112203752553889792/5_FetTj4.png"
+                alt="Event Organizer"
+              />
+            </div>
+          </div>
+          <div className="lower-container">
+            <h3>Event 1</h3>
+            <p>
+              We aim to serve students in their professional pursuit of research
+              and industry interests.Students take up challenges to solve
+              problems in areas related to Water, Food, Health and Energy
+              through scientific innovation and technological research. We
+              conduct events and hackathons which nurtures the capabilities of
+              students in our community.
+            </p>
+            <button className="btn mt-2 mb-2">Register</button>
+          </div>
         </div>
-      </div>
-      <div className="lower-container">
-        <h3>{name}</h3>
-        <p>{about}</p>
-        <button>Register</button>
+
+        <div className="card">
+          <div className="upper-Container">
+            <div className="image-container">
+              <img
+                src="https://pbs.twimg.com/profile_images/1112203752553889792/5_FetTj4.png"
+                alt="Event Organizer"
+              />
+            </div>
+          </div>
+          <div className="lower-container">
+            <h3>Event 2</h3>
+            <p>
+              We aim to serve students in their professional pursuit of research
+              and industry interests.Students take up challenges to solve
+              problems in areas related to Water, Food, Health and Energy
+              through scientific innovation and technological research. We
+              conduct events and hackathons which nurtures the capabilities of
+              students in our community.
+            </p>
+            <button className="btn mt-2 mb-2">Register</button>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="upper-Container">
+            <div className="image-container">
+              <img
+                src="https://pbs.twimg.com/profile_images/1112203752553889792/5_FetTj4.png"
+                alt="Event Organizer"
+              />
+            </div>
+          </div>
+          <div className="lower-container">
+            <h3>Event 3</h3>
+            <p>
+              We aim to serve students in their professional pursuit of research
+              and industry interests.Students take up challenges to solve
+              problems in areas related to Water, Food, Health and Energy
+              through scientific innovation and technological research. We
+              conduct events and hackathons which nurtures the capabilities of
+              students in our community.
+            </p>
+            <button className="btn mt-2 mb-2">Register</button>
+          </div>
+        </div>
       </div>
     </div>
   );

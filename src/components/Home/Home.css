@@ -18,6 +18,12 @@ form.my-login-form > h4 {
   padding-bottom: 5px !important;
   margin-top: 20px;
 }
+/* to prevent hover style from event.css btn:hover */
+.my-login-button:hover {
+  transform: none !important;
+  background-image: none !important;
+  background-color: #6200ee !important;
+}
 
 .left-side {
   flex: 0.7;

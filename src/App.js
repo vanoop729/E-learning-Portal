@@ -17,19 +17,17 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/dashboard">
-            {/* Anoop */}
             <Header search events leaderboard user />
             <Dashboard />
           </Route>
 
           <Route exact path="/events">
-            {/* Anoop */}
+            {/* Rahul */}
             <Header search events leaderboard user />
             <Event />
           </Route>
 
           <Route exact path="/leaderboard">
-            {/* Anoop */}
             <Header search leaderboard events user />
             <Leaderboard />
           </Route>
@@ -40,14 +38,13 @@ function App() {
             <Subject />
           </Route>
 
-          <Route exact path="/subject/:searchTerm">
+          <Route exact path="/subject/:subjectContent">
             {/* Preetham */}
             <Header search events leaderboard user />
             <SubjectContent />
           </Route>
 
           <Route exact path="/">
-            {/* Rahul */}
             <Header />
             <div className="home-page">
               <HomeDescription />

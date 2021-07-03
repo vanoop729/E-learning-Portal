@@ -43,6 +43,12 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .search-options {
+    display: none !important;
+  }
+}
+
 .search-options > p {
   margin: 1px 0 0 5px !important;
   color: #fff;
@@ -103,4 +109,32 @@
 .leaderboard > p,
 .events > p {
   margin: 0 0 0 5px !important;
+}
+
+.dropdown-menu {
+  min-width: 100px !important;
+  padding: 3px 0 !important;
+  border: 1px solid black !important;
+}
+
+#basic-nav-dropdown {
+  color: #fff;
+}
+
+.dropdown-item {
+  padding: 4px 8px !important;
+  display: flex !important;
+  align-items: center;
+}
+.dropdown-item > p {
+  margin-left: 5px;
+}
+
+.dropdown-item:active {
+  background-color: #e9ecef !important;
+  color: #000000 !important;
+}
+
+.dropdown-divider {
+  margin: 4px 0 !important;
 }

@@ -1,13 +1,15 @@
 import React from "react";
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Form, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import EventIcon from "@material-ui/icons/Event";
 import LeaderBoardIcon from "@material-ui/icons/EmojiEvents";
 import PersonSharpIcon from "@material-ui/icons/PersonSharp";
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import LogoutIcon from "@material-ui/icons/ExitToApp";
 import { Link } from "react-router-dom";
 
 function Header(props) {
@@ -56,10 +58,20 @@ function Header(props) {
           )}
 
           {props.user && (
-            <Link className="user" to="/dashboard">
+            <div className="user">
               <PersonSharpIcon />
-              <p>Username</p>
-            </Link>
+              <NavDropdown title="Username" id="basic-nav-dropdown">
+                <Link className="dropdown-item" to="/dashboard">
+                  <DashboardIcon fontSize="inherit" />
+                  <p>Dashboard</p>
+                </Link>
+                <NavDropdown.Divider />
+                <Link className="dropdown-item" to="/">
+                  <LogoutIcon fontSize="inherit" />
+                  <p>Logout</p>
+                </Link>
+              </NavDropdown>
+            </div>
           )}
         </Nav>
       </Navbar>
