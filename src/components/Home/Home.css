@@ -37,13 +37,12 @@ form.my-login-form > h4 {
 
 .left-side > p {
   margin-top: 20px;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
 }
 
 .right-side {
   flex: 0.3;
-  border-left: 1px solid #ebe8e8;
   height: 93vh;
 }
 
