@@ -84,7 +84,7 @@ class Leaderboard extends React.Component {
       maxScore: data.maxScore,
     });
   }
-  componentWillMount() {
+  componentDidMount() {
     this.getData();
     /*data is refreshing every 3 minutes*/
     setInterval(this.getData, 180000);

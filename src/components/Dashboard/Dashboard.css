@@ -1,0 +1,87 @@
+.dashboard-container {
+  display: flex;
+  margin: 0 8%;
+}
+
+.user-details {
+  flex: 0.3;
+  height: 91vh;
+}
+
+.user-info {
+  margin: 20px 10px;
+  background-color: #fff;
+  box-shadow: rgba(0.1, 0.1, 0.1, 0.1) 3px 3px 30px 5px;
+  height: 80vh;
+  padding: 20px;
+}
+
+.user-info > img {
+  border: none;
+  height: 100px;
+}
+
+.user-info > h5,
+.user-info > h6 {
+  font-weight: bold;
+}
+
+.user-achievements {
+  flex: 0.7;
+  height: 91vh;
+}
+
+.badges {
+  margin: 20px 10px 35px;
+  background-color: #fff;
+  box-shadow: rgba(0.1, 0.1, 0.1, 0.1) 3px 3px 30px 5px;
+  padding: 20px;
+}
+.my-card-title {
+  display: flex;
+  align-items: center;
+}
+.my-card-title > h4 {
+  margin-top: 3px;
+}
+
+.badge_icon {
+  margin-right: 5px;
+}
+
+.badges .badge-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge-container > img {
+  width: 150px;
+  height: 150px;
+  border: none;
+}
+
+.analytics {
+  margin: 20px 10px 35px;
+  background-color: #fff;
+  box-shadow: rgba(0.1, 0.1, 0.1, 0.1) 3px 3px 30px 5px;
+  padding: 20px;
+}
+
+.analytics_icon {
+  margin-right: 5px;
+}
+
+.charts-container {
+  display: flex;
+  align-items: center;
+}
+
+.doughnut-container {
+  width: 45%;
+}
+
+.barchart-container {
+  width: 55%;
+  border-left: 1px solid #000;
+  padding: 10px;
+}

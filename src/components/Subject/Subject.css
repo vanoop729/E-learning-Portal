@@ -1,33 +1,77 @@
 .title {
   color: darkslateblue;
   text-decoration: underline;
-  padding-bottom: 50px;
-  text-align-last: center;
+  padding-bottom: 80px;
+  margin-left: 100px;
 }
 
 .flexbox-container {
   display: flex;
-  margin-left: 15px;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 
 .flexbox-item {
   height: 200px;
   width: 350px;
-  margin: 10px;
-  margin-left: 40px;
-  border: 3px solid black;
+  color: white;
+  margin-left: 30px;
   background-color: grey;
+  margin-bottom: 48px;
+}
+
+.flexbox-item:hover {
+  color: white;
+  box-shadow: 3px 3px 15px 0px black;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .flexbox-item-1 {
   min-height: 100px;
+  background-color: rgba(179, 137, 29, 255);
 }
 .flexbox-item-2 {
   min-height: 100px;
+  background-color: rgba(52, 160, 173, 255);
 }
 .flexbox-item-3 {
   min-height: 100px;
+  background-color: indianred;
 }
 .flexbox-item-4 {
   min-height: 100px;
+  background-color: blueviolet;
+}
+.flexbox-item-5 {
+  min-height: 100px;
+  background-color: chocolate(23, 16, 34, 255);
+}
+.flexbox-item-6 {
+  min-height: 100px;
+  background-color: rgba(58, 82, 120, 255);
+}
+.flexbox-item-7 {
+  min-height: 100px;
+  background-color: rgba(38, 64, 174, 255);
+}
+.flexbox-item-8 {
+  min-height: 100px;
+  background-color: rgb(93, 146, 151);
+}
+.sname {
+  padding: 10px 10px 10px 10px;
+  font-size: 25px;
+}
+.scode {
+  padding: 0px 10px 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.syear {
+  padding: 30px 10px 10px 260px;
+  font-size: 18px;
+  font-weight: bold;
 }

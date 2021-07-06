@@ -7,7 +7,6 @@ import Event from "./components/Event/Event";
 import Leaderboard from "./components/Leaderboard/Leaderboard";
 import Subject from "./components/Subject/Subject";
 import SubjectContent from "./components/SubjectContent/SubjectContent";
-import { SubjectDescription } from "./components/SubjectContent/SubjectContent";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // bootstrap file
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,7 +22,6 @@ function App() {
           </Route>
 
           <Route exact path="/events">
-            {/* Rahul */}
             <Header search events leaderboard user />
             <Event />
           </Route>
@@ -34,19 +32,13 @@ function App() {
           </Route>
 
           <Route exact path="/subject">
-            {/* John */}
             <Header search filter events leaderboard user />
             <Subject />
           </Route>
 
           <Route exact path="/subject/:subjectContent">
-            {/* Preetham */}
-
             <Header search events leaderboard user />
-            <div className="home-page">
             <SubjectContent />
-            <SubjectDescription />
-            </div>
           </Route>
 
           <Route exact path="/">

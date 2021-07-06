@@ -1,51 +1,84 @@
 import React from "react";
 import "./SubjectContent.css";
-import {Link} from "react-router-dom";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { SubjectContentData } from "./SubjectContentData";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import Introduction from "../Data/DS/Intro/Introduction";
+import Array from "../Data/DS/Array/Array";
+import Stack from "../Data/DS/Stack/Stack";
+import Queue from "../Data/DS/Queue/Queue";
 
 function SubjectContent() {
+  const [topicComponent, setTopicComponent] = useState(<Introduction />);
+  const [currentUserScore, setcurrentUserScore] = useState(0);
+
+  function userScore(sc) {
+    setcurrentUserScore(sc);
+  }
+
+  function handleComp(comp) {
+    let compn = parseInt(comp);
+    if (compn === 0) {
+      setTopicComponent(<Introduction />);
+    }
+
+    if (compn === 1) {
+      setTopicComponent(<Array userScore={userScore} />);
+    }
+
+    if (compn === 2) {
+      setTopicComponent(<Stack userScore={userScore} />);
+    }
+
+    if (compn === 3) {
+      setTopicComponent(<Queue userScore={userScore} />);
+    }
+  }
+
   return (
-    <div className= "full">
-      <Link to = "/subject"> Go back to the previous page</Link>
-      {/* Start coding from here */}
-      <div className="Titles">
-        <h3>Overview</h3>
-        <div className="Topics">
-        <ol>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Array</a></li>
-          <li><a href="#">Stack</a></li>
-          <li><a href="#">Queue</a></li>
-          <li><a href="#">Linked list</a></li>
-          <li><a href="#">Binary Trees</a></li>
-          <li><a href="#">Heap</a></li>
-          <li><a href="#">Hashing</a></li>
-          <li><a href="#">Graphs</a></li>
-          <li><a href="#">Advanced Data Structures</a></li>
-          <li><a href="#">Summary</a></li>
-          <li><a href="#">Quizes</a></li>
-          <li><a href="#">Puzzles</a></li>
-          <li><a href="#">Lab experiments</a></li>
-          <li><a href="#">Online resources</a></li>
-        </ol>
+    <div className="subject-content-page">
+      <div className="subject-details">
+        {/* Subject details */}
+        <h4>
+          <Link to="/subject">
+            <ArrowBackIcon fontSize="large" className="go-back" />
+          </Link>
+          {"{Subject name and subject Code}"}
+        </h4>
+
+        {/* User subject score details */}
+        <div className="user-subject-score">
+          <h4>User Score :&nbsp;{currentUserScore}</h4>
         </div>
       </div>
-    </div>
-  );
-}
+      <div className="subject-content-main">
+        <div className="overview">
+          <div className="Titles">
+            <h3>Overview</h3>
+            <div className="Topics">
+              <ul>
+                {SubjectContentData.map((item, index) => {
+                  return (
+                    <li
+                      className="sidebar-li"
+                      key={index}
+                      data-compo={index}
+                      onClick={(e) => {
+                        handleComp(e.target.dataset.compo);
+                      }}
+                    >
+                      {item.title}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
 
-export function SubjectDescription() {
-  return (
-    <div className="Content">
-     
-      <h3>Description</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam
-        tempore quam dignissimos consequatur quis molestiae cumque, magni nemo
-        odit cum quas optio? Quam vero suscipit non libero ad neque aliquid
-        temporibus assumenda nisi, dolor harum excepturi consequuntur
-        accusantium quisquam repudiandae deleniti at ut facilis ea eius quidem
-        ipsam alias!
-      </p>
+        <div className="Content">{topicComponent}</div>
+      </div>
     </div>
   );
 }
